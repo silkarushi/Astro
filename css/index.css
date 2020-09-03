@@ -1,0 +1,153 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: black;
+  color: white;
+}
+
+
+
+header{
+    background-size: cover;
+    min-height: 100vh;
+    background: linear-gradient(135deg,rgba(0,0,0,1), rgba(0,0,0,0.2)),url("../pictures/img/img/sunrise.jpg");
+}
+
+header nav{
+  padding: 40px 40px 20px 100px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  border-bottom: 1px solid white;
+  align-items: center; 
+  
+}
+
+header nav .nav-right  a{
+  text-decoration: none;
+  color: white;
+  margin-right: 30px;
+  position: relative;
+}
+ header nav .nav-right{
+   font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: space-between;
+}
+
+header nav .nav-right a:after{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom:-40px;
+  width:0%;
+  height: 2px;
+  background: white;
+  transition: width .2s ease-in-out ;
+}
+header nav .nav-right  a:hover:after{
+  width: 80%;
+}
+header nav .nav-right  a.default:after{
+  width:80%;
+}
+
+header nav .nav-right .search div{
+  display: flex;
+  align-items: center;
+  background: #1E1E1E;
+  border-radius: 50px;
+  padding: 10px 15px;
+  
+}
+header nav .nav-right .search div input{
+  border: none;
+  outline: none;
+  color: white;
+  background: transparent;
+  font-size: 16px;
+}
+header nav .nav-right .search div img{
+  padding-right:15px;
+}
+.social div{
+  border: 2px solid white;
+  width:40px;
+  height:40px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+} 
+ 
+.social{
+  position: absolute;
+  left: 0;
+  top:0;
+  border-right: 1px solid white;
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.social div:hover{
+  background: white;
+}
+/* body{
+    padding: 0px;  
+    margin: 0px;
+}
+
+a{
+text-decoration: none;
+color: white;
+}
+
+body{
+color: white;
+background-color: black;
+}
+li {
+    display: inline;
+  }
+header{
+    background:url("../pictures/img/img/sunrise.jpg");
+    min-height: 100vh;
+}
+nav{
+    overflow: hidden;
+    
+}
+.nav-right {
+    padding-right: 80px;
+  float: right;
+}
+
+.container{
+  display: grid;
+  grid-template-columns: repeat(7,1fr);
+  grid-gap:5px;
+  padding-left: 35px;
+  padding-top: 10px;
+  padding-right: 20px;
+  background-color: rgb(26, 25, 25);
+  justify-content: space-evenly;
+  font-weight: bold;
+  justify-self: center;
+}
+.search{
+  margin-left:auto;
+}
+.anim{
+  transform: translateX(700px) scale(0.75);
+  animation: move 2s linear infinite 1s alternate;
+}
+@keyframes move{
+from{transform: translateX(700px);}
+to{transform: translateX(720px);}
+} */
