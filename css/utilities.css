@@ -1,0 +1,15 @@
+.btn{
+    padding:8px 30px;
+    border-radius: 50px;
+    outline: none;
+    border: 1px solid transparent;
+    cursor: pointer;
+    font-size: 16px;
+  }
+
+  .btn-des:hover{
+      color: white;
+      background: transparent;
+      border: 1px solid white;
+      transition: all 0.2s ease-in-out;
+  }

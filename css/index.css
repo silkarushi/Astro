@@ -7,6 +7,7 @@
 body{
   background-color: black;
   color: white;
+  font-family: 'Montserrat', sans-serif;
 }
 
 
@@ -74,13 +75,15 @@ header nav .nav-right .search div img{
   padding-right:15px;
 }
 .social div{
-  border: 2px solid white;
+  border: 1px solid white;
   width:40px;
   height:40px;
   border-radius: 50px;
   display: flex;
   align-items: center;
+  justify-content: center;
   margin-bottom: 30px;
+  /* animation: moveIn 1s ease-in-out; */
 } 
  
 .social{
@@ -93,11 +96,56 @@ header nav .nav-right .search div img{
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  min-height: 100vh;
+  min-height: 630px;
 }
 .social div:hover{
   background: white;
 }
+
+.astro{
+  position: relative;
+}
+
+@keyframes moveIn{
+  from{
+    transform: translateX(-100px);
+  }
+  to{
+    transform: translateX(0px);
+  }
+}
+.content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh -80px);
+}
+.container{
+  /* width: 1460px; */
+  max-width: 85%;
+  margin: 0 auto;
+}
+h1{
+  font-weight: 400;
+  line-height: 1.7;
+  font-size: 22px;
+  margin-bottom: 30px;
+}
+
+.content>div{
+  flex: 1;
+}
+.vaccum{
+  transform: rotate(20deg);
+  animation: anim 10s ease-in-out infinite alternate;
+}
+@keyframes anim{
+  50%{
+    transform: translateY(100px) rotate(-20deg) scale(0.7);
+  }
+}
+
+
 /* body{
     padding: 0px;  
     margin: 0px;
